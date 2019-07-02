@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ !-f /etc/aria2.conf ]; then
+if [ ! -f /etc/aria2.conf ]; then
 
 cat > /etc/aria2.conf <<EOF
 enable-rpc=true

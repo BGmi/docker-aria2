@@ -39,5 +39,6 @@ mount your `$HOME/.bgmi/bangumi` inside the container with same path.
 docker run -v $HOME/.bgmi/bangumi:$HOME/.bgmi/bangumi \
            -v $HOME/Downloads:/downloads \
            -e RPC_SECRET=$YOUR_SECRET \
+           -p 6800:6800 \
            -d bgmidocker/aria2
 ```
