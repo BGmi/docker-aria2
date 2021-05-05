@@ -1,5 +1,6 @@
 # Docker for aria2c
 
+## this Docker Image is for testing, Please use checkout this https://github.com/BGmi/BGmi#docker
 
 ## Configuration
 
@@ -30,15 +31,3 @@ you need to mount host path in container.
 you can mount your config file to `/etc/aria2.conf` to override inner config file.
 
 When mounting your own config file, all environment variable won't work.
-
-## usage as bgmi downloader
-
-mount your `$HOME/.bgmi/bangumi` inside the container with same path.
-
-```bash
-docker run -v $HOME/.bgmi/bangumi:$HOME/.bgmi/bangumi \
-           -v $HOME/Downloads:/downloads \
-           -e RPC_SECRET=$YOUR_SECRET \
-           -p 6800:6800 \
-           -d bgmidocker/aria2
-```
