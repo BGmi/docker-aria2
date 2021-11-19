@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.15
 VOLUME /downloads
 EXPOSE 6800
 
